@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    margin: 0 auto;
+    gap: 16px;
+}
+.bookCard {
+    display: grid;
+    padding: 11px;
+    width: 300px;
+    box-shadow: 0 5px 9px 0 rgba(0,0,0,0.1);
+    border-radius: 25px;
+}
+
+#bookContainer {
+    display: grid;
+    grid-gap: 15px;
+    padding: 50px 30px 0 30px;
+}
+
+.filterRow {
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-around 
+}
+
+select {
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+.book-title {
+    font-size: 25px;
+    font-weight: bold;
+    object-fit: cover;
+}
+img {
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.genre {
+    text-align: center;
+}
+
+.sort {
+    text-align: center;
+}
+.year {
+    text-align: center;
+}
+.search {
+    padding-top: 30px;
+    text-align: center;
+}
+input {
+    padding: 15px;
+    border: 1px solid;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 850px) {
+    .card {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+}
